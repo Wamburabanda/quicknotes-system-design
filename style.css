@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  line-height: 1.5;
+}
+ 
+header {
+  background: #8e0000;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+ 
+header h1 { margin: 0; }
+ 
+main {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+ 
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+ 
+#note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+ 
+input,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+}
+ 
+button {
+  align-self: flex-start;
+  background: #0ba184;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+ 
+button:hover { background: #088a70; }
+ 
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+ 
+.status { font-weight: bold; min-height: 1.5em; }
+.status-info    { color: #374151; }
+.status-success { color: #0b7a63; }
+.status-error   { color: #8e0000; }
+ 
+#notes-list { list-style: none; padding: 0; }
+ 
+.note {
+  border-left: 5px solid #0ba184;
+  background: #fffdf5;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+ 
+.note h3 { margin: 0 0 4px; font-size: 1.05rem; }
+.note p  { margin: 0 0 8px; color: #555; }
+ 
+.delete-btn {
+  background: #8e0000;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+ 
+.delete-btn:hover { background: #6b0000; }
+ 
+.empty { color: #6b7280; font-style: italic; }
+ 
+footer { text-align: center; color: #6b7280; padding: 16px; }
